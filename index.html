@@ -30,6 +30,48 @@
                 <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.
                 </p>
 
+                <form action="" method="post" enctype="multipart/form-data">
+                    <fieldset class="child-info">
+                        <legend>Informações da criança</legend>
+
+                        <div class="input-wrapper">
+                            <label for="fullname">Nome completo</label>
+                            <input id="fullname" name="fullname" type="text" placeholder="Digite o nome da criança">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="birth">Data de nascimento</label>
+                            <input id="birth" name="birth" type="date">
+                        </div>
+
+                        <div class="select-wrapper">
+                            <label for="gender">Sexo</label>
+                            <select id="gender" name="gender">
+                                <option value="male">Feminino</option>
+                                <option value="female">Masculino</option>
+                                <option value="na">Prefiro não responder</option>
+                            </select>
+                        </div>
+
+                        <div class="textarea-wrapper">
+                            <label for="medical-info">Informações medicas</label>
+                            <textarea id="medical-info" name="medical-info" cols="30" rows="10"
+                                placeholder="Informações medicas importantes"></textarea>
+                        </div>
+
+                        <div class="droparea-wrapper">
+                            <label for="file">Certidão de nascimento</label>
+                            <input type="file" id="file" name="file">
+                            <img src="./assets/icons/cloud-upload.svg" alt="imagem da nuvem">
+                            <p>Clique aqui para <br> selecionar arquivos</p>
+
+                        </div>
+
+
+
+                    </fieldset>
+                </form>
+
 
             </div>
         </main>
