@@ -15,6 +15,7 @@ main {
     & .main-container {
         width: 33rem;
         margin-left: auto;
+        margin: auto;
     }
 
     & .back {
@@ -39,6 +40,7 @@ aside {
 
     & .aside-container {
         width: 31rem;
+        margin: auto;
 
         /* primeiro nivel de imagem*/
         &>img {
