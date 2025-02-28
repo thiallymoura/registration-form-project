@@ -16,6 +16,20 @@ main {
         width: 33rem;
         margin-left: auto;
     }
+
+    & .back {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    & h1 {
+        font: 600 1.5rem/1.5 var(--font-familly);
+        margin-bottom: .5rem;
+    }
+
+
 }
 
 
@@ -25,5 +39,20 @@ aside {
 
     & .aside-container {
         width: 31rem;
+
+        /* primeiro nivel de imagem*/
+        &>img {
+            margin-top: 2rem;
+        }
+    }
+
+    & h2 {
+        font: 600 2.5rem/1.25 var(--font-familly);
+        margin-bottom: .5rem;
+
+        & span {
+            color: var(--text-highlight);
+        }
+
     }
 }
