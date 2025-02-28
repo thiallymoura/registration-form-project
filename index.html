@@ -31,6 +31,8 @@
                 </p>
 
                 <form action="" method="post" enctype="multipart/form-data">
+
+                    <!-- Informações da criança -->
                     <fieldset class="child-info">
                         <legend>Informações da criança</legend>
 
@@ -71,7 +73,9 @@
                         </div>
                     </fieldset>
 
+                    <!-- Endereço residencial -->
                     <fieldset class="address">
+
                         <legend>Endereço residencial</legend>
 
                         <div class="input-wrapper">
@@ -102,12 +106,34 @@
                                 <input type="text" id="state" name="state" value="PE" disabled>
                             </div>
                         </div>
+                    </fieldset>
 
+                    <!-- Informações do responsável -->
+                    <fieldset class="gardian">
 
+                        <legend>Informações do responsável</legend>
 
+                        <div class="input-wrapper">
+                            <label for="gardian">Nome do responsável</label>
+                            <input type="text" id="gardian" name="gardin">
+                            <small>Principal responsável legal e contato de emergência</small>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(81) 9 8765-4321">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="mail">Email</label>
+                            <input type="email" id="mail" name="mail" required>
+                            <div class="error">
+                                <img src="./assets/icons/alert-circle.svg" alt="icone de erro">
+                                <span>Insira um e-mail válido</span>
+                            </div>
+                        </div>
                     </fieldset>
                 </form>
-
             </div>
         </main>
 
