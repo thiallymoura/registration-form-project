@@ -89,7 +89,7 @@ input {
     }
 
     /* se o input estiver invalido, e tiver a classe error */
-    & [required]+.error {
+    &[required]+.error {
         display: flex;
         align-items: center;
         gap: .25rem;
