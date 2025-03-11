@@ -1,10 +1,21 @@
 /* media queries */
 @media (width <=35em) {
+
+    /* Garante que a página tenha um único scroll */
+    html,
+    body {
+        height: 100%;
+        overflow: hidden;
+        /* Impede scroll duplo */
+    }
+
     & #app {
         display: flex;
         flex-direction: column;
         justify-items: center;
-        overflow-x: hidden;
+        min-height: 100vh;
+        overflow: auto;
+        /* Adiciona um único scroll para a página */
     }
 
     & .no-mobile {
@@ -13,12 +24,10 @@
 
     & aside {
         order: -1;
-        height: 17.5rem;
-
+        height: 22rem;
         display: flex;
         align-items: center;
         justify-content: center;
-
         text-align: center;
         padding: 1.5rem;
 
@@ -28,7 +37,7 @@
             &>img {
                 width: 80%;
                 max-width: 20rem;
-                margin: 0
+                margin: 0;
             }
         }
     }
@@ -36,10 +45,12 @@
     & main {
         flex-grow: 1;
         padding: 1.5rem;
-        overflow-y: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        /* Remove o overflow do main para evitar scroll duplo */
+        overflow: unset;
 
         & .main-container {
             width: 100%;
@@ -66,8 +77,6 @@
                 margin-left: 0;
                 text-align: center;
             }
-
         }
-
     }
 }
