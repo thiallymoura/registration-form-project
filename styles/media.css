@@ -13,29 +13,29 @@
 
     & aside {
         order: -1;
-        height: 22rem;
+        height: 17.5rem;
 
         display: flex;
         align-items: center;
         justify-content: center;
 
         text-align: center;
-        padding: 2rem;
+        padding: 1.5rem;
 
         .aside-container {
             width: 100%;
-            max-width: 31rem;
 
             &>img {
                 width: 80%;
                 max-width: 20rem;
+                margin: 0
             }
         }
     }
 
     & main {
         flex-grow: 1;
-        padding: 2rem;
+        padding: 1.5rem;
         overflow-y: auto;
         display: flex;
         flex-direction: column;
